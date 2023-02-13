@@ -147,7 +147,7 @@ process articRemoveUnmappedReads {
     tuple(val(sampleName), path(bamfile))
 
     output:
-    tuple( val(sampleName), file("${sampleName}.mapped.sorted.bam"))
+    tuple(val(sampleName), file("${sampleName}.mapped.sorted.bam")), emit: mapped_bam
 
     script:
     """
