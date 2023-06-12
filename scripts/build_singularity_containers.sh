@@ -8,7 +8,7 @@ BASEDIR=$(dirname $SCRIPTPATH)
 WORKFLOWS="illumina nanopore"
 
 for WORKFLOW in ${WORKFLOWS}; do 
-    sudo singularity build ${BASEDIR}/artic-ncov2019-${WORKFLOW}.sif ${BASEDIR}/environments/${WORKFLOW}/Singularity
+    sudo apptainer build ${BASEDIR}/artic-ncov2019-${WORKFLOW}.sif ${BASEDIR}/environments/${WORKFLOW}/Singularity
 done
 
 for WORKFLOW in ${WORKFLOWS}; do
