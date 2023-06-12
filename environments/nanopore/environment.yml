@@ -6,3 +6,4 @@ channels:
 dependencies:
   - artic=1.2.3
   - pyyaml=5.3.1
+  - medaka
